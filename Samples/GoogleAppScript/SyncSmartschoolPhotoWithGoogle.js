@@ -27,9 +27,9 @@ function mainFunction() {
 
     try {
 
-      var email = users[counter].gebruikersnaam + "@DOMAINNAME.SOMETHING"; //vervang dit door uw domeinnaam
+      var email = users[counter].userName + "@DOMAINNAME.SOMETHING"; //vervang dit door uw domeinnaam
 
-      var result = getSmartschoolPhoto(users[counter].internnummer);
+      var result = getSmartschoolPhoto(users[counter].internalNumber);
 
       setGoogleAccountPhoto(email, result);
 
